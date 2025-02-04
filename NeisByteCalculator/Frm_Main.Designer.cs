@@ -31,20 +31,20 @@ namespace NeisByteCalculator
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.lbl_BytesInfo = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -87,116 +87,8 @@ namespace NeisByteCalculator
             this.splitContainer1.Panel2.Controls.Add(this.label2);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Size = new System.Drawing.Size(800, 425);
-            this.splitContainer1.SplitterDistance = 325;
+            this.splitContainer1.SplitterDistance = 307;
             this.splitContainer1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "항목";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(12, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "바이트";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(128, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 37);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "1,500 Bytes";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(128, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 37);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "자율활동";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(244, 50);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 37);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "1,500 Bytes";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(244, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 37);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "동아리활동";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(360, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 37);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "2,100 Bytes";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(360, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 37);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "진로활동";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(476, 50);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(110, 37);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "1,500 Bytes";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label10
-            // 
-            this.label10.Location = new System.Drawing.Point(476, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 37);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "교과세특";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.Location = new System.Drawing.Point(592, 50);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 37);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "1.500 Bytes";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.Location = new System.Drawing.Point(592, 12);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(110, 37);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "개인별세특";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // richTextBox1
             // 
@@ -208,12 +100,144 @@ namespace NeisByteCalculator
             // 
             // lbl_BytesInfo
             // 
-            this.lbl_BytesInfo.Location = new System.Drawing.Point(690, 30);
+            this.lbl_BytesInfo.Location = new System.Drawing.Point(12, 76);
             this.lbl_BytesInfo.Name = "lbl_BytesInfo";
-            this.lbl_BytesInfo.Size = new System.Drawing.Size(110, 37);
+            this.lbl_BytesInfo.Size = new System.Drawing.Size(776, 29);
             this.lbl_BytesInfo.TabIndex = 12;
             this.lbl_BytesInfo.Text = "1.500 Bytes";
-            this.lbl_BytesInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_BytesInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label11
+            // 
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label11.Location = new System.Drawing.Point(592, 42);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 25);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "1.500 Bytes";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(592, 12);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(110, 25);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "개인별세특";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label9.Location = new System.Drawing.Point(476, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 25);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "1,500 Bytes";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.Black;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(476, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(110, 25);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "교과세특";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Location = new System.Drawing.Point(360, 42);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 25);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "2,100 Bytes";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(360, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 25);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "진로활동";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label5.Location = new System.Drawing.Point(244, 42);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(110, 25);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "1,500 Bytes";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(244, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 25);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "동아리활동";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Location = new System.Drawing.Point(128, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 25);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "1,500 Bytes";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(128, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(110, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "자율활동";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 25);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "바이트";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "항목";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Frm_Main
             // 

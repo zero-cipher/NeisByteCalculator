@@ -40,15 +40,15 @@ namespace NeisByteCalculator
             {
                 while (true)
                 {
-
                     Invoke(new Action(() =>
                     {
                         string input = richTextBox1.Text;
-                        lbl_BytesInfo.Text = CalculateByteSize(input).ToString("#,##0") + " bytes";
+                        int bytes = CalculateByteSize(input);
+                        int countChar = input.Length;
+                        int countCharWithoutSpace = input.Replace(" ", "").Replace("\n", "").Length;
 
-
+                        lbl_BytesInfo.Text = $"공백 제외 {countCharWithoutSpace}자, 공백 포함 {countChar}자, {bytes.ToString("#,##0")}바이트";
                     }));
-
 
                     Thread.Sleep(1);
                 }
@@ -75,11 +75,8 @@ namespace NeisByteCalculator
         {
             int bytes = Encoding.UTF8.GetBytes(input).Length;
 
-            return bytes;// + CountCharacter(input, '\n');
+            return bytes + CountCharacter(input, '\n');
         }
-
-
-
 
 
     }
