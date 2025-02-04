@@ -29,9 +29,14 @@ namespace NeisByteCalculator
 
         private void Frm_Main_Load(object sender, EventArgs e)
         {
+            // 글자 수 계산을 Thread로 실행하기
             thread = new Thread(CalculateThread);
             thread.IsBackground = true;
             thread.Start();
+
+            // 테스트를 위한 글자 입력 => 나이스 결과 : 공백 제외 90자, 공백 포함 99자, 157바이트
+            richTextBox1.Text = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_=+`~;:[]{}'/?\n동해물과 백두산이 마르고 닳도록\n하느님이 보우하사 우리 나라 만세!";
+
         }
 
         private void CalculateThread()
