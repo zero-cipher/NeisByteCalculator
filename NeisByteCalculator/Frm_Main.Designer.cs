@@ -31,7 +31,6 @@ namespace NeisByteCalculator
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.lbl_BytesInfo = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace NeisByteCalculator
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.customRichTextBox1 = new NeisByteCalculator.CustomRichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -69,7 +69,7 @@ namespace NeisByteCalculator
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.richTextBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.customRichTextBox1);
             // 
             // splitContainer1.Panel2
             // 
@@ -89,14 +89,6 @@ namespace NeisByteCalculator
             this.splitContainer1.Size = new System.Drawing.Size(800, 425);
             this.splitContainer1.SplitterDistance = 307;
             this.splitContainer1.TabIndex = 1;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(157, 46);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(429, 171);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
             // 
             // lbl_BytesInfo
             // 
@@ -239,6 +231,15 @@ namespace NeisByteCalculator
             this.label1.Text = "항목";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // customRichTextBox1
+            // 
+            this.customRichTextBox1.Location = new System.Drawing.Point(59, 51);
+            this.customRichTextBox1.Name = "customRichTextBox1";
+            this.customRichTextBox1.Size = new System.Drawing.Size(309, 163);
+            this.customRichTextBox1.TabIndex = 0;
+            this.customRichTextBox1.Text = "";
+            this.customRichTextBox1.TextChanged += new System.EventHandler(this.customRichTextBox1_TextChanged);
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -262,7 +263,6 @@ namespace NeisByteCalculator
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
@@ -276,6 +276,7 @@ namespace NeisByteCalculator
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_BytesInfo;
+        private CustomRichTextBox customRichTextBox1;
     }
 }
 
