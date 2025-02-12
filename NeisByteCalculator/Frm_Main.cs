@@ -177,5 +177,31 @@ namespace NeisByteCalculator
                 txt_Input.SelectionLength = selectLength;
             }
         }
+
+        private void cmd_ForeColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog dialog = new ColorDialog();
+            
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                if (txt_Input.SelectedText.Length > 0)
+                {
+                    txt_Input.SelectionColor = dialog.Color;
+                }
+            }
+        }
+
+        private void cmd_BackColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog dialog = new ColorDialog();
+
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                if (txt_Input.SelectedText.Length > 0)
+                {
+                    txt_Input.SelectionBackColor = dialog.Color;
+                }
+            }
+        }
     }
 }
