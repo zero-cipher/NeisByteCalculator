@@ -36,10 +36,11 @@ namespace NeisByteCalculator
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.cbo_FontName = new System.Windows.Forms.ToolStripComboBox();
             this.cbo_FontSize = new System.Windows.Forms.ToolStripComboBox();
+            this.cmd_ForeColor = new System.Windows.Forms.ToolStripButton();
+            this.cmd_BackColor = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.cmd_Exit = new System.Windows.Forms.ToolStripButton();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.txt_Input = new NeisByteCalculator.CustomRichTextBox();
             this.lbl_BytesInfo = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -53,8 +54,7 @@ namespace NeisByteCalculator
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmd_ForeColor = new System.Windows.Forms.ToolStripButton();
-            this.cmd_BackColor = new System.Windows.Forms.ToolStripButton();
+            this.txt_Input = new NeisByteCalculator.CustomRichTextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -88,7 +88,7 @@ namespace NeisByteCalculator
             this.cmd_Open.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmd_Open.Name = "cmd_Open";
             this.cmd_Open.Size = new System.Drawing.Size(36, 36);
-            this.cmd_Open.Text = "toolStripButton1";
+            this.cmd_Open.Text = "파일 열기";
             this.cmd_Open.Click += new System.EventHandler(this.cmd_Open_Click);
             // 
             // cmd_Save
@@ -99,7 +99,7 @@ namespace NeisByteCalculator
             this.cmd_Save.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmd_Save.Name = "cmd_Save";
             this.cmd_Save.Size = new System.Drawing.Size(36, 36);
-            this.cmd_Save.Text = "toolStripButton2";
+            this.cmd_Save.Text = "저장";
             this.cmd_Save.Click += new System.EventHandler(this.cmd_Save_Click);
             // 
             // toolStripSeparator1
@@ -120,6 +120,26 @@ namespace NeisByteCalculator
             this.cbo_FontSize.TextUpdate += new System.EventHandler(this.cbo_FontSize_TextUpdate);
             this.cbo_FontSize.TextChanged += new System.EventHandler(this.cbo_FontSize_TextChanged);
             // 
+            // cmd_ForeColor
+            // 
+            this.cmd_ForeColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmd_ForeColor.Image = ((System.Drawing.Image)(resources.GetObject("cmd_ForeColor.Image")));
+            this.cmd_ForeColor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmd_ForeColor.Name = "cmd_ForeColor";
+            this.cmd_ForeColor.Size = new System.Drawing.Size(23, 36);
+            this.cmd_ForeColor.Text = "글자색";
+            this.cmd_ForeColor.Click += new System.EventHandler(this.cmd_ForeColor_Click);
+            // 
+            // cmd_BackColor
+            // 
+            this.cmd_BackColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.cmd_BackColor.Image = ((System.Drawing.Image)(resources.GetObject("cmd_BackColor.Image")));
+            this.cmd_BackColor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cmd_BackColor.Name = "cmd_BackColor";
+            this.cmd_BackColor.Size = new System.Drawing.Size(23, 36);
+            this.cmd_BackColor.Text = "배경색";
+            this.cmd_BackColor.Click += new System.EventHandler(this.cmd_BackColor_Click);
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
@@ -133,7 +153,8 @@ namespace NeisByteCalculator
             this.cmd_Exit.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cmd_Exit.Name = "cmd_Exit";
             this.cmd_Exit.Size = new System.Drawing.Size(36, 36);
-            this.cmd_Exit.Text = "toolStripButton9";
+            this.cmd_Exit.Text = "종료";
+            this.cmd_Exit.Click += new System.EventHandler(this.cmd_Exit_Click);
             // 
             // splitContainer1
             // 
@@ -165,17 +186,6 @@ namespace NeisByteCalculator
             this.splitContainer1.Size = new System.Drawing.Size(800, 411);
             this.splitContainer1.SplitterDistance = 300;
             this.splitContainer1.TabIndex = 1;
-            // 
-            // txt_Input
-            // 
-            this.txt_Input.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Input.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txt_Input.Location = new System.Drawing.Point(0, 0);
-            this.txt_Input.Name = "txt_Input";
-            this.txt_Input.Size = new System.Drawing.Size(800, 300);
-            this.txt_Input.TabIndex = 0;
-            this.txt_Input.Text = "";
-            this.txt_Input.TextChanged += new System.EventHandler(this.txt_Input_TextChanged);
             // 
             // lbl_BytesInfo
             // 
@@ -319,25 +329,15 @@ namespace NeisByteCalculator
             this.label1.Text = "항목";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cmd_ForeColor
+            // txt_Input
             // 
-            this.cmd_ForeColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmd_ForeColor.Image = ((System.Drawing.Image)(resources.GetObject("cmd_ForeColor.Image")));
-            this.cmd_ForeColor.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmd_ForeColor.Name = "cmd_ForeColor";
-            this.cmd_ForeColor.Size = new System.Drawing.Size(23, 36);
-            this.cmd_ForeColor.Text = "toolStripButton1";
-            this.cmd_ForeColor.Click += new System.EventHandler(this.cmd_ForeColor_Click);
-            // 
-            // cmd_BackColor
-            // 
-            this.cmd_BackColor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.cmd_BackColor.Image = ((System.Drawing.Image)(resources.GetObject("cmd_BackColor.Image")));
-            this.cmd_BackColor.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cmd_BackColor.Name = "cmd_BackColor";
-            this.cmd_BackColor.Size = new System.Drawing.Size(23, 36);
-            this.cmd_BackColor.Text = "toolStripButton2";
-            this.cmd_BackColor.Click += new System.EventHandler(this.cmd_BackColor_Click);
+            this.txt_Input.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txt_Input.Location = new System.Drawing.Point(239, 87);
+            this.txt_Input.Name = "txt_Input";
+            this.txt_Input.Size = new System.Drawing.Size(322, 126);
+            this.txt_Input.TabIndex = 1;
+            this.txt_Input.Text = "";
+            this.txt_Input.TextChanged += new System.EventHandler(this.txt_Input_TextChanged);
             // 
             // Frm_Main
             // 
@@ -377,7 +377,6 @@ namespace NeisByteCalculator
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_BytesInfo;
-        private CustomRichTextBox txt_Input;
         private System.Windows.Forms.ToolStripButton cmd_Open;
         private System.Windows.Forms.ToolStripButton cmd_Save;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
@@ -387,6 +386,7 @@ namespace NeisByteCalculator
         private System.Windows.Forms.ToolStripComboBox cbo_FontSize;
         private System.Windows.Forms.ToolStripButton cmd_ForeColor;
         private System.Windows.Forms.ToolStripButton cmd_BackColor;
+        private CustomRichTextBox txt_Input;
     }
 }
 

@@ -17,6 +17,8 @@ namespace NeisByteCalculator
     public partial class Frm_Main : Form
     {
 
+        private bool bEdited = false;
+
         public Frm_Main()
         {
             InitializeComponent();
@@ -34,6 +36,9 @@ namespace NeisByteCalculator
 
             cbo_FontSize.Items.AddRange(new string[] {"8", "9", "10", "11", "12","14", "16", "18", "20","22","24","26","28","36","48","72" });
             cbo_FontSize.Text = txt_Input.Font.Size.ToString();
+
+            // split container에 전체 크기로 자동 변경
+            txt_Input.Dock = DockStyle.Fill;
 
             // 테스트를 위한 글자 입력 => 나이스 결과 : 공백 제외 90자, 공백 포함 99자, 157바이트
             txt_Input.Text = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()-_=+`~;:[]{}'/?\n동해물과 백두산이 마르고 닳도록\n하느님이 보우하사 우리 나라 만세!";
@@ -77,10 +82,19 @@ namespace NeisByteCalculator
         private void txt_Input_TextChanged(object sender, EventArgs e)
         {
             UpdateCharacterCounters();
+            bEdited = true;
         }
 
         private void cmd_Open_Click(object sender, EventArgs e)
         {
+            if (bEdited)
+            {
+                if (MessageBox.Show("내용이 수정되었으나 저장하지 않았습니다. 저장 후 파일열기를 하시겠습니까?", "열기", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cmd_Save.PerformClick();
+                }
+            }
+
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Multiselect = false;
 
@@ -91,8 +105,11 @@ namespace NeisByteCalculator
                     if (!OpenFile(dialog.FileName, RichTextBoxStreamType.PlainText))
                     {
                         MessageBox.Show(null, "파일 열기에 실패했습니다.", "에러", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
                     }
                 }
+
+                bEdited = false;
             }
         }
 
@@ -131,6 +148,7 @@ namespace NeisByteCalculator
                 }
 
                 txt_Input.SaveFile(fileName, RichTextBoxStreamType.RichText);
+                bEdited = false;
             }
         }
 
@@ -203,5 +221,19 @@ namespace NeisByteCalculator
                 }
             }
         }
+
+        private void cmd_Exit_Click(object sender, EventArgs e)
+        {
+            if (bEdited)
+            {
+                if (MessageBox.Show("내용이 수정되었으나 저장하지 않았습니다. 종료하시겠습니까?", "종료", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                {
+                    return;
+                }
+            }
+
+            Application.Exit();
+        }
+
     }
 }
